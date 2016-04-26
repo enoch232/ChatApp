@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.message{
+	color:green;
+	font-size:2rem;
+}
+#messages{
+	overflow:auto;
+	height:500px;
+	width:100%;
+	background-color:#efefef;
+}
