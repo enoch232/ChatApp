@@ -23,3 +23,6 @@
 	width:100%;
 	background-color:#efefef;
 }
+textarea{
+	resize:none;
+}

@@ -7,6 +7,8 @@ App.room = App.cable.subscriptions.create "RoomChannel",
 
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
-    $('#messages').append "<div class = 'message'>#{data['message']}</div>"
-  speak: (message) ->
-    @perform 'speak', message: message
+    $('#messages').append "<div class = 'message'>#{data['name']}: #{data['message']}</div>"
+  speak: (name, message) ->
+    @perform 'speak', {message: message, name: name}
+    event.preventDefault();
+    $(".message-input").val("")

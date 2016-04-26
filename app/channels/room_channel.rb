@@ -8,7 +8,8 @@ class RoomChannel < ApplicationCable::Channel
     # Any cleanup needed when channel is unsubscribed
   end
   def speak(data)
-    ActionCable.server.broadcast "room_channel", message: data['message']
-    Message.create! message: data['message']
+    ActionCable.server.broadcast "room_channel", {name: data['name'].capitalize, message: data['message']}
+    Message.create!({name: data['name'].capitalize, message: data['message']})
+
   end
 end

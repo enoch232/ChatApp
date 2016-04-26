@@ -5,6 +5,7 @@ class RoomsController < ApplicationController
   end
   def create
   	@message = params[:room][:message]
+    @name = params[:room][:name]
   	respond_to do |format|
   		format.html{redirect_to root_path}
   		format.js
