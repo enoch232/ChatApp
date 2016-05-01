@@ -43,7 +43,7 @@ Rails.application.configure do
   #onfig.action_cable.allowed_request_origins = [ 'https://enochchatapp.herokuapp.com', /http:\/\/enochchatapp.herokuapp.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+   config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
