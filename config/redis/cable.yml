@@ -9,7 +9,7 @@ test: *development
 production: &production  
   :url: redis://redistogo:a86190d74fd43c9aabbecb7427093b40@lab.redistogo.com:10442
   :host: tarpon.redistogo.com
-  :port: 10272
+  :port: 10442
   :password: a86190d74fd43c9aabbecb7427093b40
   :inline: true
   :timeout: 1
