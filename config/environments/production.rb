@@ -39,8 +39,8 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Action Cable endpoint configuration
-  #config.action_cable.url = 'wss://enochchatapp.herokuapp.com/cable'
-  #onfig.action_cable.allowed_request_origins = [ 'https://enochchatapp.herokuapp.com', /http:\/\/enochchatapp.herokuapp.*/ ]
+  config.action_cable.url = 'wss://enochchatapp.herokuapp.com/cable'
+  config.action_cable.allowed_request_origins = [ 'https://enochchatapp.herokuapp.com', /http:\/\/enochchatapp.herokuapp.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
@@ -84,6 +84,4 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_cable.url = 'wss://enochchatapp.herokuapp.com/cable'
-  config.action_cable.allowed_request_origins = ['https://enochchatapp.herokuapp.com']
 end
