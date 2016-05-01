@@ -43,7 +43,7 @@ Rails.application.configure do
   #onfig.action_cable.allowed_request_origins = [ 'https://enochchatapp.herokuapp.com', /http:\/\/enochchatapp.herokuapp.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-   config.force_ssl = true
+  # config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -84,6 +84,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_cable.url = 'ws://enochchatapp.herokuapp.com/cable'
+  config.action_cable.url = 'wss://enochchatapp.herokuapp.com/cable'
   config.action_cable.allowed_request_origins = ['http://enochchatapp.herokuapp.com']
 end
