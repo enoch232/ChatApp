@@ -1,15 +1,11 @@
 
-development: &development  
-  :url: redis://localhost:6379
-  :host: localhost
-  :port: 6379
-  :timeout: 1
-  :inline: true
-test: *development  
-production: &production  
-  :url: redis://redistogo:a86190d74fd43c9aabbecb7427093b40@lab.redistogo.com:10442
-  :host: tarpon.redistogo.com
-  :port: 10442
-  :password: a86190d74fd43c9aabbecb7427093b40
-  :inline: true
-  :timeout: 1
+# Action Cable uses Redis by default to administer connections, channels, and sending/receiving messages over the WebSocket.
+production:
+  adapter: redis
+  url: redis://:test232@pub-redis-19714.us-east-1-1.1.ec2.garantiadata.com:19714
+
+development:
+  adapter: async
+
+test:
+  adapter: async
