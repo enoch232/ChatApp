@@ -1,4 +1,4 @@
-class ActionCableWebsocket  
+class ChatActionCable  
   def initialize(app, options={})
     @app = app
   end
@@ -10,4 +10,4 @@ class ActionCableWebsocket
       @app.call(env)
     end
   end
-end  
+end
